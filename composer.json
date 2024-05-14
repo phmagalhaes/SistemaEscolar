@@ -1,0 +1,19 @@
+{
+    "name": "olimpiada/sistema-escolar",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Olimpiada\\SistemaEscolar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "phmagalhaes",
+            "email": "pedrohenrique.msantos.2001@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "twig/twig": "^3.10"
+    }
+}

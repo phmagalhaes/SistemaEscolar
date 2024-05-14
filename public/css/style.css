@@ -1,0 +1,267 @@
+/* DEFINIÇÃO GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+/* PAGINA DE LOGIN */
+.loginPage{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* PAGINA DE LOGIN - div do formulário */
+.loginPage_form{
+    text-align: center;
+    padding: 20px 70px;
+    box-shadow: 0px 0px 5px black;
+    color: #535353;
+}
+/* PAGINA DE LOGIN - formulário */
+.loginPage_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+/* PAGINA DE LOGIN - input */
+.loginPage_form form input{
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 3px #535353;
+    font-size: 17px;
+    width: 20rem;
+}
+/* PAGINA DE LOGIN - botão */
+.loginPage_form form button{
+    background-color: #1C92FE;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.loginPage_form form button:hover{
+    background-color: #0058aa;
+
+}
+
+
+/* PAGINA INICIAL */
+/* PAGINA INICIAL - header*/
+.homePage_header{
+    background-color: #1C92FE;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    color: white;
+}
+/* PAGINA INICIAL - link*/
+.homePage_header a{
+    color: white;
+    text-decoration: none;
+}
+.homePage_header a:hover{
+    text-decoration: underline;
+}
+/* PAGINA INICIAL - main*/
+.homePage_content{
+    padding: 40px;
+}
+/* PAGINA INICIAL - cadastro de turmas*/
+.homePage_content_cadastroTurma{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+/* PAGINA INICIAL - botão de cadastro de turmas*/
+.homePage_content_cadastroTurma a{
+    color: white;
+    text-decoration: none;
+    background-color: #1C92FE;
+    padding: 10px 25px;
+    transition: all 250ms ease;
+}
+.homePage_content_cadastroTurma a:hover{
+    background-color: #0058aa;
+}
+/* PAGINA INICIAL - tabela de turmas*/
+.homePage_content_turmas table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* PAGINA INICIAL - linhas da tabela*/
+.homePage_content_turmas table th, .homePage_content_turmas table td {
+    border-top: 1px solid black;
+    padding: 5px 25px;
+}
+.homePage_content_turmas table th{
+    border-top: none;
+}
+.homePage_content_turmas table th{
+    text-align: left;
+}
+.homePage_content_turmas table td:first-child{
+    text-align: center;
+}
+/* PAGINA INICIAL - botões da tabela*/
+.homePage_content_turmas table td button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.homePage_content_turmas table td .buttonExcluir{
+    color: white;
+    background-color: #FC7E7C;
+    margin-right: 10px;
+}
+.homePage_content_turmas table td .buttonExcluir:hover{
+    background-color: #ff4946;
+}
+.homePage_content_turmas table td .buttonVisualizar{
+    color: black;
+    background-color: #00DC9B;
+}
+.homePage_content_turmas table td .buttonVisualizar:hover{
+    background-color: #00ffb3;
+}
+
+
+/* PAGINA TURMA */
+/* PAGINA TURMA - header*/
+.turmaPage_header{
+    background-color: #1C92FE;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    color: white;
+}
+/* PAGINA TURMA - link*/
+.turmaPage_header a{
+    color: white;
+    text-decoration: none;
+}
+.turmaPage_header a:hover{
+    text-decoration: underline;
+}
+/* PAGINA TURMA - main*/
+.turmaPage_content{
+    padding: 40px;
+}
+/* PAGINA TURMA - cadastro de turmas*/
+.turmaPage_content_cadastroTurma{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+/* PAGINA TURMA - botão de cadastro de turmas*/
+.turmaPage_content_cadastroTurma a{
+    color: white;
+    text-decoration: none;
+    background-color: #1C92FE;
+    padding: 10px 25px;
+    transition: all 250ms ease;
+}
+.turmaPage_content_cadastroTurma a:hover{
+    background-color: #0058aa;
+}
+/* PAGINA TURMA - tabela de turmas*/
+.turmaPage_content_turmas table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* PAGINA TURMA - linhas da tabela*/
+.turmaPage_content_turmas table th, .turmaPage_content_turmas table td {
+    border-top: 1px solid black;
+    padding: 5px 25px;
+}
+.turmaPage_content_turmas table th{
+    border-top: none;
+}
+.turmaPage_content_turmas table th{
+    text-align: left;
+}
+.turmaPage_content_turmas table td:first-child{
+    text-align: center;
+}
+/* PAGINA TURMA - botões da tabela*/
+.turmaPage_content_turmas table td button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.turmaPage_content_turmas table td .buttonExcluir{
+    color: white;
+    background-color: #FC7E7C;
+    margin-right: 10px;
+}
+.turmaPage_content_turmas table td .buttonExcluir:hover{
+    background-color: #ff4946;
+}
+.turmaPage_content_turmas table td .buttonVisualizar{
+    color: black;
+    background-color: #00DC9B;
+}
+.turmaPage_content_turmas table td .buttonVisualizar:hover{
+    background-color: #00ffb3;
+}
+
+
+/* PAGINA DE CADASTRO */
+.cadastroPage{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* PAGINA DE CADASTRO - div do formulário */
+.cadastroPage_form{
+    text-align: center;
+    padding: 20px 70px;
+    box-shadow: 0px 0px 5px black;
+    color: #535353;
+}
+/* PAGINA DE CADASTRO - formulário */
+.cadastroPage_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+/* PAGINA DE CADASTRO - input */
+.cadastroPage_form form input, .cadastroPage_form form select{
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 3px #535353;
+    font-size: 17px;
+    width: 20rem;
+}
+/* PAGINA DE CADASTRO - botão */
+.cadastroPage_form form button{
+    background-color: #1C92FE;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.cadastroPage_form form button:hover{
+    background-color: #0058aa;
+
+}

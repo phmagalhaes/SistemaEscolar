@@ -1,11 +1,13 @@
 <div class="cadastroPage">
     <div class="cadastroPage_form">
         <h1>Cadastre uma atividade</h1>
-        <form action="">
+        <form action="?pagina=turma&metodo=insertAtividade" method="post">
             <input type="text" placeholder="Título" name="titulo" required>
             <select name="turma">
                 <option value="-">Selecione a turma da atividade</option>
-                <option value="-">Desenvolvimento de Sistemas SAO1</option>
+                {% for turma in turmas %}
+                <option value="{{turma.nome}}">{{turma.nome}}</option>
+                {% endfor %}
             </select>
             <button type="submit">CADASTRAR</button>
         </form>

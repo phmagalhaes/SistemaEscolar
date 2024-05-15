@@ -8,13 +8,27 @@ class TurmaController
             unset($_SESSION['senha']);
             header('Location: ?pagina=login');
         }
+
+        $atividades = Atividades::selectByTurma($_GET['turma']);
+        $professor = Professores::selectByEmail();
+        
         $loader = new \Twig\Loader\FilesystemLoader('app/views');
         $twig = new \Twig\Environment($loader);
         $template = $twig->load('turma.html');
 
         $parametros = array();
+        $parametros['atividades'] = $atividades;
+        $parametros['professores'] = $professor;
 
         $conteudo = $template->render($parametros);
         echo $conteudo;
+    }
+
+    public function insertAtividade(){
+        Atividades::insert($_POST);
+    }
+
+    public function deleteAtividade(){
+        Atividades::delete($_GET['turma']);
     }
 }

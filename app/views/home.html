@@ -1,11 +1,13 @@
 <div class="homePage">
     <header class="homePage_header">
-        <p>Nome do Professor</p>
+        {% for professor in professores %}
+        <p>{{professor.nome}}</p>
+        {% endfor %}
         <a href="?pagina=home&metodo=logout">Sair</a>
     </header>
     <main class="homePage_content">
         <div class="homePage_content_cadastroTurma">
-            <a href="">Cadastrar Turma</a>
+            <a href="?pagina=cadastrarTurma">Cadastrar Turma</a>
         </div>
         <div class="homePage_content_turmas">
             <h2>Turmas</h2>
@@ -18,18 +20,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for turma in turmas %}
                     <tr>
-                        <td>1</td>
-                        <td>Desenvolvimento de Sistemas</td>
-                        <td><button class="buttonExcluir">Excluir</button><button
-                                class="buttonVisualizar">Visualizar</button></td>
+                        <td class="idTurma"></td>
+                        <td>{{turma.nome}}</td>
+                        <td><button class="buttonExcluir" onclick="redirectButtonExcluir('{{turma.nome}}')">Excluir</button>
+                            <button class="buttonVisualizar" onclick="redirectButtonVisualizar('{{turma.nome}}')">Visualizar</button>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Desenvolvimento de Sistemas SA01</td>
-                        <td><button class="buttonExcluir">Excluir</button><button
-                                class="buttonVisualizar">Visualizar</button></td>
-                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>

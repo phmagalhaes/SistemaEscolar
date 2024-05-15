@@ -98,7 +98,6 @@
     margin-top: 20px;
     border-collapse: collapse;
 }
-
 /* PAGINA INICIAL - linhas da tabela*/
 .homePage_content_turmas table th, .homePage_content_turmas table td {
     border-top: 1px solid black;

@@ -23,12 +23,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for atividade in atividades %} 
+                    {% if atividades is empty %}
+                    <tr>
+                        <td colspan="2">Nenhuma atividade cadastrada</td>
+                    </tr>
+                    {% else %}
+                    {% for atividade in atividades %}
                     <tr>
                         <td class="idAtividade"></td>
-                        <td>{{atividade.titulo}}</td>
+                        <td>{{ atividade.titulo }}</td>
                     </tr>
                     {% endfor %}
+                    {% endif %}
                 </tbody>
             </table>
         </div>

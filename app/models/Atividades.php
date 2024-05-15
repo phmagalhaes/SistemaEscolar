@@ -14,10 +14,6 @@ class Atividades
             $resultado[] = $row;
         }
 
-        if(!$resultado){
-            echo "Não foi encontrado nenhum registro no Banco de Dados :(";
-        }
-
         return $resultado;
     }
 
